@@ -33,9 +33,9 @@ export default function Conflict() {
                   <T en={side.side.en}>{side.side.de}</T>
                 </div>
                 <ul className="space-y-4">
-                  {side.items.map((it) => (
+                  {side.items.map((it, index) => (
                     <li
-                      key={it}
+                      key={index}
                       className="flex gap-3 text-bone/75 leading-relaxed text-sm sm:text-base"
                     >
                       <span
